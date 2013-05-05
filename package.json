@@ -1,0 +1,15 @@
+{
+    "name": "WAPTrackingExample",
+    "description": "Shows how to use google adwords tracking code on WAP",
+    "keywords": ["adwords"],
+    "version": "1.0.0",
+    "author": "@homam",
+    "dependencies":{
+        "express": "*",
+        "connect-coffee-script": "*",
+        "ejs": "*",
+        "emptygif": "*",
+        "less-middleware": "*"
+    },
+    "main": "server.js"
+}
