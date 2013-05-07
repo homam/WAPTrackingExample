@@ -165,9 +165,9 @@ pip-log.txt
 #################
 ## Web Strom
 #################
-.idea/*
+.idea/
 
 #################
 ## Node
 #################
-node_modules/*
+node_modules/
