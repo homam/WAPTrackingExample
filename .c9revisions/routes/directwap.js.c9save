@@ -1,0 +1,4 @@
+{"ts":1367914727766,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1367914769864,"patch":[[{"diffs":[[1,"exports.directwap = function(req, res){\n    var ua = req.headers['user-agent'];\n    console.log(\"Direct WAP\");\n    res.write(\"direct wap!\");\n    res.end();\n};"]],"start1":0,"start2":0,"length1":0,"length2":158}]],"length":158,"saved":false}
+{"ts":1367915029122,"patch":[[{"diffs":[[0,"    "],[-1,"console.log(\"Direct WAP\");\n    res.write(\""],[1,"res.render('"],[0,"direct"],[-1," "],[0,"wap"],[-1,"!\");\n    res.end("],[1,"', { title: 'Express' }"],[0,");\n}"]],"start1":80,"start2":80,"length1":77,"length2":52}]],"length":133,"saved":false}
+{"ts":1367915033910,"patch":[[{"diffs":[[0,"s){\n"],[-1,"    var ua = req.headers['user-agent'];\n"],[0,"    "]],"start1":36,"start2":36,"length1":48,"length2":8}]],"length":93,"saved":false}

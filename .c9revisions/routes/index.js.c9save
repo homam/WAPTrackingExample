@@ -1,0 +1,2 @@
+{"ts":1367818565688,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"exports.index = function(req, res){\n    res.render('index', { title: 'Express' });\n};"]],"start1":0,"start2":0,"length1":0,"length2":85}]],"length":85}
+{"contributors":[],"silentsave":false,"ts":1367818690959,"patch":[[{"diffs":[[0,", res){\n"],[1,"    var ua = req.headers['user-agent'];\n    console.log(ua);\n"],[0,"    res."]],"start1":28,"start2":28,"length1":16,"length2":77}]],"length":146,"saved":false}

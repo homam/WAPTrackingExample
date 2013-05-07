@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Google AdWords Conversion Tracking Example</title>
 </head>
 <body>
-    <a class="adwords-conversion" href="sms:0555268287&body=hello homam"><img src="http://wap.mozook.com/cmps/Templates/Mozook_Ringtone/Default/HTML/images/subscribe_btns/subscribe_btn-p320-en.gif" border="0" /></a>
-    <script type="text/javascript" src="/adwords.js"></script>
+    <a class="track-click submethod-CLICKTAG" href="sms:0555268287"><img src="http://wap.mozook.com/cmps/Templates/Mozook_Ringtone/Default/HTML/images/subscribe_btns/subscribe_btn-p320-en.gif" border="0" /></a>
+    <script type="text/javascript" src="/tracker.js"></script>
 </body>
 </html>
+
+
+<!--
+    How to:
+    
+    In all WAP landing pages:
+    
+    Step 1: Add two class names to conversion anchors in the landing pages:
+        track-click
+        submethod-[SubMethodId]
+        
+        track-click: a label to tell the program to track interactions with this anchor.
+        submethod-[SubMethodId]: [SubMethodId] is dynamic 
+    
+    Step 2:
+        Update tracjer.js, make sure the class names in lines 14 and 15 match the values of submethod=[SubMethodId]
+        
+    Step 3:
+        Minify tracker.js, create tracker.min.js
+        Add <script> reference to tracker.min.js just before </body>
+        
+    Step 4:
+        For PIN, WPP, LINKCLICK, LINKWAP_DIRECT, LINKPIN, WAPPIN subcription methods, the pixel must be added in the congratulations page:
+            <imb src="http://www.googleadservices.com/pagead/conversion/1005094064/?value=0&amp;label=KbsBCMC0wAUQsImi3wM&amp;guid=ON&amp;script=0" width="1" height="1" alt="" />
+
+-->
