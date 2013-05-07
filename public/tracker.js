@@ -32,7 +32,8 @@ function trackAdWordsConv() {
                 image.width = 1;
                 image.height = 1;
             }
-            image.src = "http://www.googleadservices.com/pagead/conversion/1005094064/?value=0&amp;label=KbsBCMC0wAUQsImi3wM&amp;guid=ON&amp;script=0";
+            // this is a submission pixel
+            image.src = "http://www.googleadservices.com/pagead/conversion/1005094064/?value=1&amp;label=KbsBCMC0wAUQsImi3wM&amp;guid=ON&amp;script=0";
             image.setAttribute("src", image.src);
             document.body.appendChild(image);
         } catch (ex){
