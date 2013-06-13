@@ -57,8 +57,25 @@ app.get('/__nontracking_pixel.gif', function(req, res, next) {
     });
 });
 
-app.get('/', routes.index);
+var pulls = {};
+app.post('/issubscribed', function(req, res, next) {
+    var vid = +req.body.vid;
+    if(!vid) {
+        res.status(500);
+        res.end();
+    } else {
+        pulls[vid] = (pulls[vid] || 0) + 1;
+        if(pulls[vid] > 3) {
+            res.send('http://www.mozook.com/?vid=' + vid); 
+        } else {
+            res.send('');
+        }
+    }
+});
+
+//app.get('/', routes.index);
 app.get('/directwap',  require('./routes/directwap.js').directwap);
+app.get('/',  require('./routes/autoredir.js').autoredir);
 
 http.createServer(app).listen(app.get('port'), function(){
     console.log("Express server listening on port " + app.get('port'));

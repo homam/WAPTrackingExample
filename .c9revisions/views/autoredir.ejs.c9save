@@ -1,0 +1,4 @@
+{"ts":1371124032633,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1371124038010,"patch":[[{"diffs":[[1,"<!DOCTYPE html>\n<html>\n<head>\n    <title>DirectWAP</title>\n</head>\n<body>\n    <a href=\"/\">BACK TO THE PAGE</a>\n</body>\n</html>"]],"start1":0,"start2":0,"length1":0,"length2":126}]],"length":126,"saved":false}
+{"ts":1371124043043,"patch":[[{"diffs":[[0,"    "],[-1,"<a href=\"/\">BACK TO THE PAGE</a>"],[0,"\n</b"]],"start1":74,"start2":74,"length1":40,"length2":8}]],"length":94,"saved":false}
+{"ts":1371124535874,"patch":[[{"diffs":[[0,"dy>\n    "],[1,"<script src=\"/autoredir/xhr.js\"></script>\n    <script src=\"/autoredir/pull.js\"></script>"],[0,"\n</body>"]],"start1":70,"start2":70,"length1":16,"length2":104}]],"length":182,"saved":false}

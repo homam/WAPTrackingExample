@@ -23,7 +23,7 @@
         submethod-[SubMethodId]: [SubMethodId] is dynamic 
     
     Step 2:
-        Update tracjer.js, make sure the class names in lines 14 and 15 match the values of submethod=[SubMethodId]
+        Update tracker.js, make sure the class names in lines 14 and 15 match the values of submethod-[SubMethodId]
         
     Step 3:
         Minify tracker.js, create tracker.min.js
@@ -32,7 +32,13 @@
     Step 4:
         For PIN, WAP, LINKCLICK, LINKWAP_DIRECT, LINKPIN, WAPPIN subcription methods, the pixel must be added in the congratulations page:
             <img src="http://www.googleadservices.com/pagead/conversion/1005094064/imp.gif?value=2&amp;label=EEgNCKiexQUQsImi3wM&amp;guid=ON&amp;script=0" width="1" height="1" alt="" />
-        Please note that the SRC value is different for the above subscription methods.
+        Please note that the value of the src attribute is different.
+        
+    Step 5:
+        For Google Play subscription method:
+            When the app opened for the first time, open a page  in the external browser like: http://wap.mozook.com/adwordstracker/?subscriberid=...
+            Add the subscription pixel at Step 4, in that page.
+            Load the page, wait for one second for the pixel to be fired, then redirect the user to the service page.
 
 
     Full example and test is available at: https://c9.io/homam/waptrackingexample
