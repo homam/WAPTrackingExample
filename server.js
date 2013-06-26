@@ -58,8 +58,11 @@ app.get('/__nontracking_pixel.gif', function(req, res, next) {
 });
 
 var pulls = {};
+app.get('/issubscribed', function(req,res,next) {
+    res.send('http://www.mozook.com/?vid='); 
+});
 app.post('/issubscribed', function(req, res, next) {
-    var vid = +req.body.vid;
+    var vid = +(req.body.vid || "0");
     if(!vid) {
         res.status(500);
         res.end();
@@ -76,6 +79,8 @@ app.post('/issubscribed', function(req, res, next) {
 //app.get('/', routes.index);
 app.get('/directwap',  require('./routes/directwap.js').directwap);
 app.get('/',  require('./routes/autoredir.js').autoredir);
+app.get('/autoredir_inner', require('./routes/autoredir.js').autoredir_inner)
+app.get('/autoredir_congrats', require('./routes/autoredir.js').autoredir_congrats)
 
 http.createServer(app).listen(app.get('port'), function(){
     console.log("Express server listening on port " + app.get('port'));
