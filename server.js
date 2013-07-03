@@ -71,7 +71,6 @@ app.post('/issubscribed', function(req, res, next) {
     }
 });
 
-//app.get('/', routes.index);
 app.get('/directwap',  require('./routes/directwap.js').directwap);
 app.get('/',  require('./routes/autoredir.js').autoredir);
 app.get('/autoredir_inner', require('./routes/autoredir.js').autoredir_inner)
